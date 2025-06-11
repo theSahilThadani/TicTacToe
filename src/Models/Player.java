@@ -1,22 +1,27 @@
 package Models;
 
 public class Player {
-    private Sysmbol sysmbol;
+    private Symbol symbol;
     private String name;
     private PlayerType playerType;
 
-    public Player(Sysmbol sysmbol, String name, PlayerType playerType) {
-        this.sysmbol = sysmbol;
+    public Player(Symbol symbol, String name, PlayerType playerType) {
+        this.symbol = symbol;
         this.name = name;
         this.playerType = playerType;
     }
-
-    public Sysmbol getSysmbol() {
-        return sysmbol;
+    //methods
+    public Cell makeMove(){
+        return null;
     }
 
-    public void setSysmbol(Sysmbol sysmbol) {
-        this.sysmbol = sysmbol;
+    //getter setters
+    public Symbol getSysmbol() {
+        return symbol;
+    }
+
+    public void setSysmbol(Symbol symbol) {
+        this.symbol = symbol;
     }
 
     public String getName() {

@@ -17,6 +17,21 @@ public class Board {
             }
         }
     }
+    //Methods
+     public void print(){
+         for(List<Cell> row: board){
+             System.out.printf("|");
+             for(Cell cell : row){
+                 if(cell.getCellState().equals(CellState.EMPTY)){
+                     System.out.print(" - |" );
+                 }else{
+                     System.out.print(" " + cell.getPlayer().getSysmbol().getaChar()+ " |");
+                 }
+             }
+             System.out.println();
+         }
+     }
+    //getter setters
     public int getSize() {
         return size;
     }

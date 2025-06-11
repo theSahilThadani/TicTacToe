@@ -1,9 +1,9 @@
 package Models;
 
-public class Sysmbol {
+public class Symbol {
     private char aChar;
 
-    public Sysmbol(char aChar) {
+    public Symbol(char aChar) {
         this.aChar = aChar;
     }
 
